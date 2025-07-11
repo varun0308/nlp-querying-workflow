@@ -1,0 +1,43 @@
+Table name: activities_66ceb5481f5bbfed03b14167_ds_bottles
+Definition: This table logs bottle distribution activity under the "FARM_ACTIVITIES" group, specifically for "DS - Device". It captures quantity supplied, quantity returned, and reasons for inadequate returns when applicable. Data is collected with multilingual support and structured using a custom activity form.
+Field Definitions:
+- _id: string — Unique internal identifier for the activity record. e.g., "66d1860577176822857a7c16"
+- __v: integer — Document version number (internal use). e.g., 0
+- actionDate: timestamp — Date when the activity was recorded in the system. e.g., "2024-11-04T18:30:00Z"
+- activityId: string — Reference ID to the configured activity type. e.g., "66ceb5481f5bbfed03b14167"
+- activityType: string — Type of activity (e.g., "FARM"). e.g., "FARM"
+- name: string — Human-readable name of the activity. e.g., "DS - Bottles"
+- scheduledStartDate: timestamp — Scheduled date/time when the activity was to begin. e.g., "2024-08-30T00:00:10Z"
+- scheduledEndDate: timestamp — Scheduled date/time when the activity was to end. e.g., "2024-08-30T00:00:10Z"
+- status: string — Completion status of the activity. e.g., "Done"
+- createdBy__id: string — ID of the user who created the activity. e.g., "66d16cf0ec6beb-10bad625b1"
+- createdBy_name: string — Name of the user who created the record. e.g., "Kanakangi Bhabhe"
+- createdBy_date: timestamp — Timestamp when the activity was created. e.g., "2024-08-30T00:00:10Z"
+- entity__id: string — ID of the farmer or entity involved. e.g., "66d03f555fe2e1-10d06f550a"
+- entity_name: string — Name of the entity (usually farmer). e.g., "Rika Arun Meda"
+- entity_entityType: string — Type of the associated entity. e.g., "FARMER"
+- entity_status: string — Approval status of the entity. e.g., "approved"
+- entity_uniqueId_idType: string — Type of entity ID (e.g., "CUSTOM", "AADHAAR"). e.g., "CUSTOM"
+- entity_uniqueId_id: string — Unique external ID for the entity. e.g., "CIC-127125"
+- facility__id: string — Facility linked to the activity. e.g., "66d16990cef4f81b268f2f2d"
+- facility_name: string — Name of the facility. e.g., "HH"
+- facility_facilityType: string — Type of facility. e.g., "FARM"
+- facility_uniqueId_id: string — Unique ID of the facility. e.g., "147-03-BB-18960"
+- facility_uniqueId_idType: string — Type of facility ID. e.g., "UID"
+- updatedBy__id: string — User ID who last updated the activity. e.g., "11699531"
+- updatedBy_name: string — Name of user who last updated the activity. e.g., "Divya M"
+- updatedBy_date: timestamp — When the last update was made. e.g., "2024-11-06T14:01:21Z"
+- association_0__id to association_4__id: string — Hierarchical association identifiers (organization to village). e.g., "66cc1caeacef7640404e341c"
+- association_0_name to association_4_name: string — Association names at each level (organization → village). e.g., "Amarpura"
+- association_0_level to association_4_level: integer — Level number from organization (0) to village (4)
+- association_0_levelName to association_4_levelName: string — Level description. e.g., "State", "District", "Cluster", etc.
+- association_0_parentEntityId to association_4_parentEntityId: string — Parent ID of the respective level.
+- association_0_mainEntityId to association_4_mainEntityId: string — Root entity ID to which this level belongs.
+- date_of_distribution_value: date (nullable) — Date the bottles were distributed. e.g., "2024-11-04", can be null if missing.
+- quantity_of_bottles_supplied_value: float — Quantity of bottles supplied (usually 10.0). Must be between 10 and 10.5. e.g., 10.0
+- quantity_of_bottles_received_value: float — Quantity of bottles returned. Allowed between 0 and 99. e.g., 10.0 or 0.0
+- reason_for_inadequate_return_of_bottle_value: string (nullable) — Dropdown reason for incomplete returns if any. e.g., "RATS GNAWED THE CORNERS OF BOTTLES..."
+- originator_* fields: various — Reserved fields for upstream initiator, often null in this activity.
+- extras_* fields: various — Reserved for future use or schema reuse across activities (seed type, cost, year, etc.). Mostly null for this activity.
+- repetition__id: string (nullable) — ID for repetition of activity, if applicable. e.g., null
+- repetition_position: integer (nullable) — Position in a repeated sequence of the same activity. e.g., null

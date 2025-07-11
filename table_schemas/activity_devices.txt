@@ -1,0 +1,56 @@
+Table name: activities_66ceb5341f5bbfed03b140ec_ds_device
+Definitions: Holds data on the distribution of device(water filter) to different households
+Field Definitions: 
+- _id: string — Unique internal identifier for the record. e.g, "66d184c60e1ca0-58e0283b28"
+- __v: integer — Document version number (used internally). e.g, 0
+- actionDate: timestamp — Actual date the activity occurred. e.g, "2024-08-30T00:00:10+00:00"
+- activityId: string — Identifier for the related activity. e.g, "66ceb5341f5bbfed03b140ec"
+- activityType: string — Type of activity conducted. e.g, "FARM"
+- name: string — Label for the activity. e.g, "DS - Device"
+- scheduledStartDate / scheduledEndDate: timestamp — Planned start/end date of the activity. e.g, "2024-08-30T00:00:10+00:00"
+- status: string — Completion status. e.g, "Done"
+- createdBy__id: string — ID of user/system who created the record. e.g, "66d16cf0ec6beb-10bad625b1"
+- createdBy_name: string — Creator’s name. e.g, "Kanakangi Bhabhe"
+- createdBy_date: timestamp — Creation time. e.g, "2024-08-30T00:00:10+00:00"
+- entity__id: string — ID of the involved entit e.g, household/farmer. e.g, "66d03f4c5fe2e1-10d06e99b2"
+- entity_name: string — Entity name. e.g, "Bhatka Bai"
+- entity_entityType: string — Type of entity. e.g, "FARMER"
+- entity_status: string — Entity status. e.g, "approved"
+- entity_uniqueId_idType: string — ID type. e.g, "CUSTOM"
+- entity_uniqueId_id: string — Unique identifier. e.g, "CIC-117533"
+- extras_year / extras_season / extras_popType: null or string — Reserved or unused for this activity. e.g, null
+- extras_applicationMode: string — Application mode. e.g, "none"
+- extras_seedSource / extras_seedType / extras_sowingType: null or string — Unused. e.g, null
+- extras_seedquantityvalue: float or null — Seed quantity. e.g, NaN
+- extras_seedquantityunit: string or null — Unit. e.g, null
+- extras_numberOfPlants: integer or null e.g, null
+- extras_totalInputCost_value: float or null e.g, NaN
+- extras_totalInputCost_currency_*: string or null — Currency details. e.g, "INR", "₹", "Indian Rupee"
+- extras_grade / extras_harvestType: string or null — Unused here. e.g, null
+- extras_actualQuantity_value: float or null e.g, NaN
+- extras_actualQuantity_unit: string or null — Quantity unit. e.g, null
+- extras_container_value: float or null e.g, NaN
+- extras_container_unit: string or null e.g, null
+- extras_estimatedQuantity_value: float or null e.g, NaN
+- extras_estimatedQuantity_unit: string or null e.g, null
+- originator__id / originator_name: string or null — Activity originator. e.g, null
+- originator_originatorType: string or null — Type of originator. e.g, "FIELD_AGENT"
+- originator_extras_cropId / cropName / variantId / variantName: string or null — Crop info. e.g, null
+- originator_uniqueId_id / idType: string or null e.g, null
+- facility__id: string — Facility ID. e.g, "66d16e47cef4f81b26938600"
+- facility_name: string e.g, "HH"
+- facility_facilityType: string e.g, "FARM"
+- facility_uniqueId_id: string e.g, "147-03-BB-29530"
+- facility_uniqueId_idType: string e.g, "UID"
+- updatedBy__id: string e.g, "11705275"
+- updatedBy_name: string e.g, "Rehandiya Saste"
+- updatedBy_date: timestamp e.g, "2025-02-19T10:39:11+00:00"
+- uniqueId_id / uniqueId_idType: string or null e.g, null
+- association_{n}__id / name / level / levelName / parentEntityId / mainEntityId: string, integer — Hierarchical admin mapping. e.g, "Madhya Pradesh", 1, "State"
+- attachments_0_url / name / _id: string or null — File metadata. e.g, null
+- wadi_id_value: float — ID reference for WADI project. e.g, 135270.0
+- date_of_distribution_value: ISO timestamp — Date of device distribution. e.g, "2022-06-15T00:00:10Z"
+- date_of_technology_training_value: ISO timestamp — Training date. e.g, "1987-12-31T18:30:00Z"
+- no_of_hh_members_trained_male_value / female_value: float — Count of male/female trained. e.g, 4.0, 1.0
+- no_of_hh_memebers_trained_male_value: float or null — Likely a duplicate field (typo). e.g, NaN
+- repetition_position / repetition__id: string or null — Repeat section info if form has subgroups. e.g, null

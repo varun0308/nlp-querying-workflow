@@ -1,0 +1,80 @@
+Table name: users
+Definition: This table contains detailed profile information for users, including personal, geographic, organizational, banking, and verification metadata. It serves as a central user registry for the platform.
+Field Definitions:
+- _id: string — Unique user identifier. e.g., "66d03f3d5fe2e1-10d06d5354"
+- firstname: string — First name of the user. e.g., "Ramkali"
+- lastname: string — Last name of the user. e.g., "Sadhu"
+- gender: string — Gender of the user. e.g., "Male"
+- mobileno: string — Mobile number of the user. e.g., "9876543210"
+- userid: string — Login identifier for the user (often same as mobile number). e.g., "9876543210"
+- password: string — Hashed password of the user. e.g., "c7f660c192b915b6b13c9849202697d8e6"
+- usergroup: string — User group or role domain. e.g., "IND"
+- roleId: string — Role identifier for access control. e.g., "5d0fa9ce612fec3abd6dd932"
+- roleName: string — Name of the user role. e.g., "Farmer"
+- deleted: integer — Soft delete flag (0 = active, 1 = deleted). e.g., 0
+- disabled: boolean — Flag to disable user access. e.g., false
+- sync_status: boolean — Sync status with external systems. e.g., true
+- isPrimary: boolean — If this is a primary user. e.g., false
+- preferred_language: string — Preferred language for communication. e.g., "en"
+- certificate: string — Certification held by user. e.g., "PGS"
+- processor_id: string — Processor associated with the user. e.g., "66cxyz123abc"
+- organization_id: string — ID of user's organization. e.g., "66cc1caeacef7640404e341c"
+- creation_date: timestamp — Timestamp of record creation. e.g., "2024-06-01T10:00:00Z"
+- updated_date: timestamp — Timestamp of last update. e.g., "2024-06-10T15:30:00Z"
+- last_login_date: timestamp — Timestamp of last login. e.g., "2024-07-01T09:00:00Z"
+- address: struct — Nested object containing user's physical address:
+    - address.addressline1: string — Street or door number. e.g., "123 Main Street"
+    - address.village: string — Village name. e.g., "Green Village"
+    - address.taulka: string — Taluka name. e.g., "Tirur"
+    - address.hobli: string — Hobli (sub-tehsil). e.g., "Vaniyamkulam"
+    - address.pincode: string — Postal code. e.g., "679576"
+    - address.district: string — District name. e.g., "Palakkad"
+    - address.state: string — State name. e.g., "Kerala"
+    - address.country: string — Country name. e.g., "India"
+- status: string — General status of user. e.g., "Active"
+- certification_status: string — Certification program status. e.g., "PGS"
+- identity: string — Type of identity document. e.g., "Aadhar"
+- id_proof: string — Name of the ID proof. e.g., "Aadhar Card"
+- identification_no: string — ID number. e.g., "1234-5678-9012"
+- pgs_member_code: string — Code for PGS certification. e.g., "PGS-IND-000123"
+- created_by_oid: string — ID of the creator of this user record. e.g., "66d03f535fe2e1-004"
+- modified_by_oid: string — ID of the user who last modified this record. e.g., "66d03f535fe2e1-005"
+- organization_id_oid: string — ID of organization reference. e.g., "66d03f535fe2e1-006"
+- fieldofficer_id_oid: string — ID of the field officer associated with the user. e.g., "66d03f535fe2e1-001"
+- cooperative_id_oid: string — ID of cooperative linked to the user. e.g., "66d03f535fe2e1-002"
+- fpo_id_oid: string — ID of FPO linked to the user. e.g., "66d03f535fe2e1-003"
+- warehouse_id_oid: string — ID of the warehouse associated. e.g., "66d03f535fe2e1-007"
+- is_otp_verified: boolean — If the user's phone was OTP verified. e.g., true
+- otp_verification_meta: string — Metadata about OTP verification. e.g., "Verified via SMS"
+- blockchain_meta_is_private: boolean — If blockchain data is private. e.g., true
+- blockchain_meta_sync_status: boolean — If blockchain sync was successful. e.g., true
+- blockchain_meta_asset_id: string — Asset ID on blockchain. e.g., "asset-123abc456"
+- __v: integer — Internal versioning for Mongoose. e.g., 0
+- bank_name_passbook: string — Bank name from passbook. e.g., "State Bank of India"
+- bank_account_type: string — Bank account type. e.g., "Savings"
+- bank_ifsc: string — IFSC code of bank. e.g., "SBIN0001234"
+- bank_account_number: string — User's bank account number. e.g., "123456789012"
+- bank_id_proof: string — Document proving bank account. e.g., "Cancelled Cheque"
+- bank_status: boolean — Whether bank details are verified. e.g., true
+- identity_status: boolean — Whether identity is verified. e.g., true
+- association_name: string — Name of main user association. e.g., "Green Growers Association"
+- created_by_name: string — Name of record creator. e.g., "Admin User"
+- modified_by_name: string — Name of last modifier. e.g., "Field Officer A"
+- merged_mobile_number: string — Final verified mobile number. e.g., "+919876543210"
+- org_registration_date: string — Date of organization registration. e.g., "2023-02-15"
+- father_husband_name: string — Name of father or husband. e.g., "Ramesh Kumar"
+- reference_number: string — External system reference ID. e.g., "EXT-REF-00123"
+- version: string — Version of the record. e.g., "0.0"
+- userToken: string — Token used for user authentication. e.g., "abc123xyz"
+- registrationToken: string — Registration token for mobile apps. e.g., "xyz123abc"
+- country_code: string — Country code for mobile. e.g., "+91"
+- isSystemGeneratedPassword: boolean — Indicates if password is auto-generated. e.g., true
+- consentVersion: string — Version of user consent terms. e.g., "v2.1"
+- level: string — User's level in hierarchy. e.g., "District"
+- levelName: string — Descriptive level name. e.g., "Palakkad Level"
+- entitiesIds: array — List of entity IDs assigned. e.g., ["ent-001", "ent-002"]
+- facilities: array — Facilities linked with user. e.g., ["fac-001"]
+- fpos: array — FPOs associated with user. e.g., ["fpo-001"]
+- coos: array — COOPs associated with user. e.g., [{"type": "COOP", "typeId": "66cdebb02b069cfaf080657d"}]
+- fcm_notification: object — Firebase Cloud Messaging settings. e.g., {"is_enabled": false, "notification_time": "09:00"}
+- sms: object — SMS notification preferences. e.g., {"activity_alerts": true}

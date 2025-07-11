@@ -1,0 +1,72 @@
+Table name: activities_67c0276efbb09d936d69e706_monitoring
+Definition: This table captures monitoring responses under the "FARM_ACTIVITIES" group for the "Monitoring" activity. It collects household-level behavioral, awareness, and infrastructure data related to water usage, Wadi device impact, and WASH campaign effectiveness.
+Field Definitions:
+- _id: string — Unique identifier for the monitoring activity record. e.g., "67c83e93cb149a-3210644678"
+- __v: integer — Document version number (used internally). e.g., 0
+- actionDate: timestamp — Actual date the monitoring activity was conducted. e.g., "2025-03-04T18:30:00+00:00"
+- activityId: string — Identifier of the activity type. e.g., "67c0276efbb09d936d69e706"
+- activityType: string — High-level category of activity. e.g., "FARM"
+- name: string — Name of the activity. e.g., "Monitoring"
+- scheduledStartDate: timestamp — Scheduled start date of the activity. e.g., "2025-03-30T18:30:00+00:00"
+- scheduledEndDate: timestamp — Scheduled end date of the activity. e.g., "2025-03-30T18:30:00+00:00"
+- status: string — Status of the activity (e.g., pending, complete, overdue). e.g., "Overdue"
+- createdBy__id: string — ID of the user who created the record. e.g., "66f6993df33b065659bc40c9"
+- createdBy_name: string — Name of the user who created the record. e.g., "Sonali Shivalkar"
+- createdBy_date: timestamp — Timestamp when the record was created. e.g., "2025-03-05T12:07:47+00:00"
+- updatedBy__id: string — ID of the user who last updated the record. e.g., "14040426"
+- updatedBy_name: string — Name of the user who updated the record. e.g., "Arjun Solanki"
+- updatedBy_date: timestamp — Timestamp of last update. e.g., "2025-03-07T10:39:55+00:00"
+- entity__id: string — ID of the associated entity (e.g., farmer). e.g., "66d03f3d5fe2e1-10d06d4512"
+- entity_name: string — Name of the associated entity. e.g., "Miyansingh Khumansingh Dapla"
+- entity_entityType: string — Type of entity (e.g., FARMER). e.g., "FARMER"
+- entity_status: string — Approval status of the entity. e.g., "approved"
+- entity_uniqueId_idType: string — ID type of the entity. e.g., "CUSTOM"
+- entity_uniqueId_id: string — Unique ID of the entity. e.g., "CIC-100093"
+- has_repondent_consented_for_the_interview_value: string — Consent given by the respondent. e.g., "YES"
+- are_the_respondent_s_willing_to_provide_water_for_testing_value: string — Willingness to provide water for testing. e.g., "Yes"
+- is_the_household_having_handwashing_facility_value: string — Presence of handwashing facility. e.g., "Yes"
+- is_there_availability_of_water_and_soap_at_handwashing_facility_value: string — Availability of water and soap. e.g., "No"
+- after_getting_wadi_device_how_much_water_do_you_usually_boil_for_drinking_value: float64 — Water boiled for drinking after Wadi device. e.g., 2.5
+- do_you_know_how_to_operate_wadi_device_value: string — Knowledge of Wadi device operation. e.g., "No"
+- was_the_maintenance_of_device_explained_by_cic_value: string — Whether CIC explained device maintenance. e.g., "Yes"
+- how_do_you_know_that_the_water_purified_from_the_wadi_device_is_safe_to_drink_value: string — How respondent assesses water safety. e.g., "No change in taste or smell"
+- were_wash_campaigns_conducted_by_cic_was_benefits_of_the_program_explained_during_wc_value: string — Whether WASH campaign and benefits were explained. e.g., "Yes"
+- are_you_aware_of_the_helpline_number_in_case_of_issues_doubts_regarding_the_wadi_device_and_bottles_value: string — Awareness of CIC helpline. e.g., "No"
+- who_collects_the_firewood_in_your_household_value: string — Firewood collector in the household. e.g., "Women"
+- is_there_any_reduction_in_fuelwood_required_currently_as_compared_to_before_using_the_water_wadi_device_value: string — Reduction in fuelwood usage post Wadi. e.g., "Yes"
+- facility__id: string — ID of associated facility. e.g., "66d162e7cef4f81b26883186"
+- facility_name: string — Name of the facility. e.g., "HH"
+- facility_facilityType: string — Facility type (e.g., FARM). e.g., "FARM"
+- facility_uniqueId_id: string — Facility UID. e.g., "147-03-BB-01991"
+- facility_uniqueId_idType: string — Type of UID. e.g., "UID"
+- association_0__id to association_4__id: string — IDs for each level in the hierarchy (Org → State → District → Cluster → Village).
+- association_0_name to association_4_name: string — Names for each level.
+- association_0_level to association_4_level: int — Numeric level (0=Org, 4=Village).
+- association_0_levelName to association_4_levelName: string — Name of each level.
+- association_0_parentEntityId to association_4_parentEntityId: string — Parent entity for hierarchy.
+- association_0_mainEntityId to association_4_mainEntityId: string — Root org reference.
+- repetition__id: string — ID of the repeated activity group, if any. e.g., null
+- repetition_position: integer — Position/index in the repetition. e.g., null
+- extras_year: integer — Year of activity. e.g., null
+- extras_season: string — Season of activity. e.g., null
+- extras_popType: string — Population type. e.g., null
+- extras_applicationMode: string — Mode of application. e.g., "none"
+- extras_seedSource: string — Source of seed. e.g., null
+- extras_seedType: string — Type of seed. e.g., null
+- extras_sowingType: string — Sowing method. e.g., null
+- extras_seedquantityvalue: float64 — Quantity of seed used. e.g., null
+- extras_seedquantityunit: string — Unit of seed quantity. e.g., null
+- extras_numberOfPlants: integer — Total number of plants. e.g., null
+- extras_totalInputCost_value: float64 — Total input cost. e.g., null
+- extras_totalInputCost_currency_name: string — Name of currency. e.g., null
+- extras_totalInputCost_currency_symbol: string — Symbol of currency. e.g., null
+- extras_totalInputCost_currency_abbreviation: string — Abbreviation of currency. e.g., null
+- extras_totalInputCost_currency_nameWithAbbreviation: string — Currency with abbreviation. e.g., null
+- extras_grade: string — Grade of output. e.g., null
+- extras_harvestType: string — Harvest method. e.g., null
+- extras_actualQuantity_value: float64 — Actual quantity harvested. e.g., null
+- extras_actualQuantity_unit: string — Unit of harvest. e.g., null
+- extras_estimatedQuantity_value: float64 — Estimated quantity expected. e.g., null
+- extras_estimatedQuantity_unit: string — Estimated unit. e.g., null
+- extras_container_value: float64 — Quantity per container. e.g., null
+- extras_container_unit: string — Unit of container. e.g., null

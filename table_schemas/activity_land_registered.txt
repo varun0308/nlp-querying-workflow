@@ -1,0 +1,71 @@
+Table name: activities_LAND_REGISTERED_land_registered
+Definition: All land registered to farmers
+Field Definitions:
+- _id: string — Unique internal identifier for the record. e.g., "66d043494caf4a-58fda8d83a"  
+- __v: integer — Document version number. e.g., 0  
+- actionDate: timestamp — Actual date the activity occurred. e.g., "2024-08-29T09:45:45+00:00"  
+- activityId: string — Identifier for the activity type. e.g., "LAND_REGISTERED"  
+- activityType: string — Type of activity. e.g., "LAND_REGISTERED"  
+- name: string — Human-readable name of the activity. e.g., "Land Registered"  
+- scheduledStartDate: timestamp — Scheduled start of the activity. e.g., "2024-08-29T09:45:45+00:00"  
+- scheduledEndDate: timestamp — Scheduled end of the activity. e.g., "2024-08-29T09:45:45+00:00"  
+- status: string — Current status of the activity. e.g., "Done"  
+- createdBy__id: string — ID of the user who created the record. e.g., "66ccaf6e536c2c-1adc6dab87"  
+- createdBy_name: string — Name of the creator. e.g., "Sajal S"  
+- createdBy_date: timestamp — Creation timestamp. e.g., "2024-08-29T09:45:45+00:00"  
+- updatedBy__id: string — ID of the user who last updated the record. e.g., "7187335"  
+- updatedBy_name: string — Name of the user who updated it. e.g., "Sajal S"  
+- updatedBy_date: timestamp — Timestamp of last update. e.g., "2024-08-29T10:17:07+00:00"  
+- entity__id: string — ID of the primary entity (usually the farmer). e.g., "66d03f3d5fe2e1-10d06d4341"  
+- entity_name: string/null — Name of the entity. e.g., "Ramsingh NinguPalvi"  
+- entity_entityType: string — Type of entity. e.g., "FARMER"  
+- entity_status: string/null — Entity’s status. e.g., null  
+- entity_uniqueId_idType: string/null — ID type of the entity. e.g., "UID"  
+- entity_uniqueId_id: string/null — Unique identifier value. e.g., "1724924745513"  
+- uniqueId_id: string — Unique ID assigned to the record. e.g., "1724924745513"  
+- uniqueId_idType: string — Type of the unique ID. e.g., "UID"  
+- facility__id: string/null — ID of the facility associated. e.g., null  
+- facility_name: string/null — Name of the facility. e.g., null  
+- facility_facilityType: string/null — Type of facility. e.g., null  
+- facility_uniqueId_id: string/null — Facility’s unique ID. e.g., null  
+- facility_uniqueId_idType: string/null — Type of facility ID. e.g., null  
+- originator__id: string/null — ID of originator (if different from entity). e.g., null  
+- originator_name: string/null — Name of originator. e.g., null  
+- originator_originatorType: string/null — Type of originator (e.g., LAND). e.g., null  
+- originator_uniqueId_id: string/null — Unique ID of originator. e.g., null  
+- originator_uniqueId_idType: string/null — Type of unique ID. e.g., null  
+- originator_extras_cropId: string/null — ID of crop involved. e.g., null  
+- originator_extras_cropName: string/null — Name of the crop. e.g., null  
+- originator_extras_variantId: string/null — ID of crop variant. e.g., null  
+- originator_extras_variantName: string/null — Name of variant. e.g., null  
+- extras_year: integer/null — Cropping year. e.g., null  
+- extras_season: string/null — Season (e.g., Kharif, Rabi). e.g., null  
+- extras_popType: string/null — Population type (e.g., Main Crop). e.g., null  
+- extras_applicationMode: string/null — Application method. e.g., null  
+- extras_seedSource: string/null — Seed source. e.g., null  
+- extras_seedType: string/null — Seed type. e.g., null  
+- extras_sowingType: string/null — Sowing method. e.g., null  
+- extras_seedquantityvalue: float/null — Quantity of seed used. e.g., 5.5  
+- extras_seedquantityunit: string/null — Unit of seed quantity. e.g., "kg"  
+- extras_numberOfPlants: integer/null — No. of plants. e.g., null  
+- extras_totalInputCost_value: float/null — Input cost. e.g., 1200.0  
+- extras_totalInputCost_currency_name: string/null — Currency name. e.g., "Indian Rupee"  
+- extras_totalInputCost_currency_symbol: string/null — Currency symbol. e.g., "₹"  
+- extras_totalInputCost_currency_abbreviation: string/null — Currency abbreviation. e.g., "INR"  
+- extras_totalInputCost_currency_nameWithAbbreviation: string/null — Combined currency label. e.g., "Indian Rupee (INR)"  
+- extras_grade: string/null — Output grade. e.g., null  
+- extras_harvestType: string/null — Type of harvest. e.g., "Manual"  
+- extras_actualQuantity_value: float/null — Actual harvested quantity. e.g., 240.0  
+- extras_actualQuantity_unit: string/null — Unit of actual quantity. e.g., "kg"  
+- extras_container_value: float/null — Quantity stored. e.g., 5.0  
+- extras_container_unit: string/null — Container unit. e.g., "bag"  
+- extras_estimatedQuantity_value: float/null — Estimated yield. e.g., 300.0  
+- extras_estimatedQuantity_unit: string/null — Unit of estimated yield. e.g., "kg"  
+- association_{n}__id: string — ID of the nth association level (0: org, 1: state...). e.g., "66cdeba22b069c-510805d71"  
+- association_{n}_name: string — Name of the association. e.g., "Khandwa"  
+- association_{n}_level: integer — Hierarchical level (0–4). e.g., 2  
+- association_{n}_levelName: string — Name of the level. e.g., "District"  
+- association_{n}_parentEntityId: string/null — Parent entity ID. e.g., "66cdeba22b069c-510805d67"  
+- association_{n}_mainEntityId: string — Root org ID. e.g., "66cc1caeacef7640404e341c"  
+- repetition__id: string/null — ID for repeated instance (if recurring activity). e.g., null  
+- repetition_position: integer/null — Index of occurrence in repeated series. e.g., null  
